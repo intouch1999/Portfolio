@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@primevue/nuxt-module',
-    '@nuxt/image'
+    '@nuxt/image',
+    'nuxt-aos',
   ],
 })
