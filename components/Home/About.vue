@@ -1,5 +1,6 @@
 <template>
     <div class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh align-middle">
+        <div data-aos="fade-up" class="flex flex-col items-center justify-center ">
         <h1 class="text-3xl font-bold tracking-tight text-gray-900 m-4">{{ about.about }}</h1>
         <div class="flex flex-row items-center justify-center">
             <div class="basis-1/3 m-4">
@@ -15,6 +16,7 @@
             <div class="basis-1/2 m-4">
                 <p class="text text-justify indent-8">{{ about.description }}</p> 
             </div>     
+        </div>
         </div>
     </div>
 </template>

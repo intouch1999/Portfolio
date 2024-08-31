@@ -1,5 +1,6 @@
 <template>
     <div class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh align-middle">
+      <div data-aos="fade-up">
       <div class="flex flex-col items-center justify-center my-50 h-100 " >
         <NuxtImg 
           src="/img/personal.jpg"  
@@ -10,6 +11,7 @@
             {{ value }}
           </h1>
       </div>
+    </div>
     </div>
   </template>
   
