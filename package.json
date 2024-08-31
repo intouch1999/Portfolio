@@ -13,6 +13,7 @@
     "@nuxt/image": "^1.7.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.13.0",
+    "nuxt-aos": "^1.2.5",
     "primevue": "^4.0.5",
     "vue": "latest"
   },
