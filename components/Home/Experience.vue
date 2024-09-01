@@ -1,13 +1,13 @@
 <template>
     <div
-        class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh align-middle">
+        class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh align-middle m-4">
         <div data-aos="fade-up" class="flex flex-col items-center justify-center ">
             <h1 class="text-3xl font-bold tracking-tight text-gray-900 m-4 hover:text-blue-600 transition-colors duration-300">Experience</h1>
             <ol class="relative border-s border-gray-200">
                 <!-- Main Work Experience -->
                 <li v-for="experience in experiences.Main_Work" class="mb-10 ms-6">
                     <span
-                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ">
                         <svg class="w-4 h-4 text-blue-800 animate-pulse" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
@@ -34,7 +34,7 @@
                 <!-- Freelance Experience -->
                 <li v-for="experience in experiences.Other_Work" class="mb-10 ms-6">
                     <span
-                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3">
                         <svg class="w-4 h-4 text-blue-800 animate-pulse" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
