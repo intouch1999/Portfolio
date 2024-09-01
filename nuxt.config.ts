@@ -1,3 +1,4 @@
+import Aura from '@primevue/themes/aura';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -5,7 +6,21 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
+    // '@primevue/nuxt-module',
     '@nuxt/image',
     'nuxt-aos',
   ],
+//   primevue: {
+//     options: {
+//         theme: {
+//             preset: Aura,
+//             options: {
+//               prefix: 'p',
+//               darkModeSelector: 'light-dark',
+//               cssLayer: false
+//           }
+//         },
+        
+//     }
+// }
 })
