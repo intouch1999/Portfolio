@@ -5,11 +5,15 @@
             <HomeProfile />
             <HomeAbout />
             <HomeExperience />
+            <HomeSkill />
+            <HomeEducation />
         </div>
       </main>
     </div>
   </template>
   
   <script setup>
+
+
  
   </script>
