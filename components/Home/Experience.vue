@@ -24,7 +24,7 @@
                     <time class="block mb-2 text-sm font-normal leading-none text-gray-400 hover:text-blue-400 transition-colors duration-300">{{ experience.date }}</time>
                     <ul>
                         <li v-for="(desc, descIndex) in experience.description" :key="descIndex"
-                            class="text-base font-normal text-sm text-gray-500 hover:text-gray-700 transition-colors duration-300
+                            class=" font-normal text-sm text-gray-500 hover:text-gray-700 
                                    transform hover:translate-x-2 transition-transform duration-300 ease-in-out">
                             {{ desc }}
                         </li>
@@ -53,7 +53,7 @@
                             class="text-md font-semibold text-gray-700 mb-2 group-hover:text-blue-600 transition-colors duration-300">
                             {{ project.label }}</h5>
                             
-                        <p class="font-normal text-sm text-gray-500 group-hover:text-gray-700 transition-colors duration-300
+                        <p class="font-normal text-sm text-gray-500 group-hover:text-gray-700 
                                   transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out">
                             {{ project.value }}
                         </p>
