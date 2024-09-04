@@ -16,6 +16,7 @@
     "nuxt": "^3.13.0",
     "nuxt-aos": "^1.2.5",
     "primevue": "^4.0.5",
+    "swiper": "^11.1.12",
     "vue": "latest"
   },
   "devDependencies": {
