@@ -1,66 +1,109 @@
 <template>
-    <div class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh align-middle m-4">
+    <div class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 min-h-screen">
       <div class="flex flex-col items-center justify-center text-center w-full" data-aos="fade-up">
-        <h1 class="text-3xl font-bold tracking-tight text-gray-900 m-4 hover:text-blue-600 transition-colors duration-300">MY SKILLS</h1>
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 mb-8 hover:text-blue-600 transition-colors duration-300">MY SKILLS</h1>
+        
         <Swiper
-    :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination]"
-    :slides-per-view="5"
-    :space-between="10"
-    :loop="true"
-    :autoplay="{
-      delay: 2500,
-      disableOnInteraction: false,
-    }"
-    :effect="'coverflow'"
-    :coverflowEffect="{
-      rotate: 10,
-      stretch: 0,
-      depth: 50,
-      modifier: 1,
-      slideShadows: false,
-    }"
-    :pagination="{ clickable: true }"
-    :breakpoints="{
-      '640': {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-      '768': {
-        slidesPerView: 4,
-        spaceBetween: 10,
-      },
-      '1024': {
-        slidesPerView: 5,
-        spaceBetween: 10,
-      },
-    }"
-    class="w-full"
-  >
-    <SwiperSlide v-for="(skill, index) in skills" :key="skill.icon" class="text-center group">
-      <div class="w-24 h-24 mx-auto flex items-center justify-center">
-        <NuxtImg :src="`/img/skills/${skill.icon}.svg`" :class="skill.class" class="w-full h-full object-contain" :alt="skill.title" />
-      </div>
-      <p class="mt-2 text-gray-700 group-hover:text-blue-600 transition-colors duration-300 font-semibold">
-        {{ skill.title }}
-      </p>
-    </SwiperSlide>
-  </Swiper>
+          :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination]"
+          :slides-per-view="3"
+          :space-between="10"
+          :loop="true"
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: false,
+          }"
+          :effect="'cards'"
+          :coverflowEffect="{
+            rotate: 10,
+            stretch: 0,
+            depth: 50,
+            modifier: 1,
+            slideShadows: false,
+          }"
+          :pagination="{
+            dynamicBullets: true,
+          }"
+          :breakpoints="{
+            '640': {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            '768': {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            '1024': {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+            '1280': {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          }"
+          class="w-full swiper-container mb-8"
+        >
+          <SwiperSlide v-for="skill in skills" :key="skill.icon" class="text-center group">
+            <div class="w-24 h-24 mx-auto flex items-center justify-center bg-white rounded-full shadow-lg transform transition-all duration-300 hover:scale-110">
+              <NuxtImg :src="`/img/skills/${skill.icon}.svg`" :class="skill.class" class="w-16 h-16 object-contain" :alt="skill.title" />
+            </div>
+            <p class="mt-4 text-gray-700 group-hover:text-blue-600 transition-colors duration-300 font-semibold">
+              {{ skill.title }}
+            </p>
+          </SwiperSlide>
+        </Swiper>
+        <div @click="toggleSkillsList" class="cursor-pointer text-center flex flex-col justify-center align-middle">
+          <p class="text-gray-700 group-hover:text-blue-600 transition-colors duration-300 font-semibold mb-2">Show More</p>
+          <div class="  text-center flex justify-center">
+          <svg class="w-6 h-6 text-gray-800 animate-bounce" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 10">
+            <path d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z"/>
+        </svg>
+        </div>
+        </div>
+
+
+
+  
+        <transition
+          enter-active-class="transition ease-out duration-300"
+          enter-from-class="transform opacity-0 scale-95"
+          enter-to-class="transform opacity-100 scale-100"
+          leave-active-class="transition ease-in duration-200"
+          leave-from-class="transform opacity-100 scale-100"
+          leave-to-class="transform opacity-0 scale-95"
+        >
+          <div v-if="showSkillsList" class="w-full max-w-3xl bg-white rounded-lg shadow-xl p-6">
+            <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              <li v-for="skill in skills" :key="skill.icon" 
+                  class="flex items-center space-x-2 p-2 rounded-md transition-colors duration-300 hover:bg-blue-50 justify-center">
+                <span class="text-sm font-medium text-gray-700">{{ skill.title }}</span>
+              </li>
+            </ul>
+          </div>
+        </transition>
       </div>
     </div>
   </template>
   
   <script setup>
+  import { ref } from 'vue'
   import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules'
   
   const SwiperAutoplay = Autoplay
   const SwiperEffectCoverflow = EffectCoverflow
   const SwiperPagination = Pagination
   
+  const showSkillsList = ref()
+  
+  const toggleSkillsList = () => {
+    showSkillsList.value = !showSkillsList.value
+  }
+  
   const skills = [
     { icon: 'html', title: 'HTML', class: 'stroke-black' },
     { icon: 'css', title: 'CSS' },
     { icon: 'javascript', title: 'JavaScript' },
-    { icon: 'jquery', title: 'Jquery' },
+    { icon: 'jquery', title: 'jQuery' },
     { icon: 'bootstrap', title: 'Bootstrap' },
     { icon: 'nuxt', title: 'Nuxt.js' },
     { icon: 'vue', title: 'Vue.js' },
@@ -75,31 +118,19 @@
   </script>
   
   <style scoped>
-  .triangle {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-100%) scale(0);
-    top: 30px;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid #2563eb; /* blue-600 */
-    transition: transform 0.3s ease-in-out;
+  .swiper-container {
+    padding-bottom: 40px;
   }
   
-  .group:hover .triangle {
-    transform: translateX(-50%) translateY(-100%) scale(1);
+  :deep(.swiper-pagination) {
+    bottom: 0 !important;
   }
   
-  /* Add these styles to adjust Swiper pagination */
   :deep(.swiper-pagination-bullet) {
-    background-color: #4b5563; /* gray-600 */
+    background-color: #4b5563;
   }
   
   :deep(.swiper-pagination-bullet-active) {
-    background-color: #2563eb; /* blue-600 */
+    background-color: #2563eb;
   }
-
-  
   </style>
