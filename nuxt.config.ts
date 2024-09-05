@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     // '@primevue/nuxt-module',
     '@nuxt/image',
     'nuxt-aos',
+    'nuxt-swiper'
   ],
 //   primevue: {
 //     options: {
@@ -23,4 +24,8 @@ export default defineNuxtConfig({
         
 //     }
 // }
+ devServer: {
+    host: '172.16.16.16',
+    port: 3000
+  }
 })
