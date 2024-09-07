@@ -1,4 +1,3 @@
-import Aura from '@primevue/themes/aura';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -9,7 +8,7 @@ export default defineNuxtConfig({
     // '@primevue/nuxt-module',
     '@nuxt/image',
     'nuxt-aos',
-    'nuxt-swiper'
+    'nuxt-swiper',
   ],
 //   primevue: {
 //     options: {
