@@ -33,6 +33,7 @@ import HomeAbout from '~/components/Home/About.vue'
 import HomeExperience from '~/components/Home/Experience.vue'
 import HomeSkill from '~/components/Home/Skill.vue'
 import HomeEducation from '~/components/Home/Education.vue'
+import HomeContact from '~/components/Home/Contact.vue'
 
 // Array of components and their respective IDs
 const sections = [
@@ -41,6 +42,7 @@ const sections = [
 { id: 'Experiences', component: HomeExperience },
 { id: 'Educations', component: HomeEducation },
 { id: 'Skills', component: HomeSkill },
+{ id: 'Contact', component: HomeContact },
 
 ]
 </script>
