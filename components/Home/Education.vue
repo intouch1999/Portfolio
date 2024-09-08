@@ -16,10 +16,8 @@
                     Educations
                 </h1>
             </div>
-
-
-            <ol class="relative w-full">
-                <li v-for="(education, index) in education.data" :key="index" class="mb-10 ml-6">
+            <ol class="relative w-full grid grid-cols-2 md:grid-cols-8 gap-4">
+                <li v-for="(education, index) in education.data" :key="index" class="mb-10 ml-6 col-span-2 md:col-start-2 md:col-span-4">
                     <div class="flex items-start">
                         <span class="flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

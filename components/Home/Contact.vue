@@ -3,7 +3,7 @@
         <div data-aos="fade-up" class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 w-full">
             <div class="flex flex-col items-center justify-center text-center">
                 <h1 data-aos="fade-down" class="text-3xl font-bold tracking-tight text-gray-900 m-4 hover:text-blue-600 transition-colors duration-500">
-                    contacts
+                    Contact
                 </h1>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
