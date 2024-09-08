@@ -2,7 +2,7 @@
     <div class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh">
       <div class="flex flex-col items-center justify-center text-center w-full" data-aos="fade-up">
         <h1 class="text-4xl font-bold tracking-tight text-gray-900 mb-8 hover:text-blue-600 transition-colors duration-300">MY SKILLS</h1>
-        
+        <client-only>
         <Swiper
           :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination]"
           :slides-per-view="3"
@@ -45,13 +45,14 @@
         >
           <SwiperSlide v-for="skill in skills" :key="skill.icon" class="text-center group">
             <div class="w-24 h-24 mx-auto flex items-center justify-center bg-white rounded-full shadow-lg transform transition-all duration-300 hover:scale-110">
-              <NuxtImg :src="`/img/skills/${skill.icon}.svg`" :class="skill.class" class="w-16 h-16 object-contain" :alt="skill.title" />
+              <NuxtImg :src="`/img/skills/${skill.icon}.svg`" :class="skill.class" class="w-16 h-16 object-contain" :alt="skill.title"  :srcset="null"  />
             </div>
             <p class="mt-4 text-gray-700 group-hover:text-blue-600 transition-colors duration-300 font-semibold">
               {{ skill.title }}
             </p>
           </SwiperSlide>
         </Swiper>
+        </client-only>
         <div @click="toggleSkillsList" class="cursor-pointer text-center flex flex-col justify-center align-middle">
           <p class="text-gray-700 group-hover:text-blue-600 transition-colors duration-300 font-semibold mb-2">Show More</p>
           <div class="  text-center flex justify-center">

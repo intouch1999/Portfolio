@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-    // '@primevue/nuxt-module',
     '@nuxt/image',
     'nuxt-aos',
     'nuxt-swiper',
@@ -27,4 +26,5 @@ export default defineNuxtConfig({
 //     host: '172.16.16.16',
 //     port: 3000
 //   }
+
 })
