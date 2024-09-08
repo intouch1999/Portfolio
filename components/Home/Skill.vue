@@ -1,7 +1,14 @@
 <template>
     <div class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh">
       <div class="flex flex-col items-center justify-center text-center w-full" data-aos="fade-up">
-        <h1 class="text-4xl font-bold tracking-tight text-gray-900 mb-8 hover:text-blue-600 transition-colors duration-300">MY SKILLS</h1>
+        <div class="text-center mb-4">
+          <h1 class="mt-2 text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">My Skills</h1>      
+        <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+            <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
+            <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
+        </div>
+        
+        
         <client-only>
         <Swiper
           :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination]"
@@ -41,7 +48,7 @@
               spaceBetween: 20,
             },
           }"
-          class="w-full swiper-container mb-8"
+          class="w-full swiper-container my-8"
         >
           <SwiperSlide v-for="skill in skills" :key="skill.icon" class="text-center group">
             <div class="w-24 h-24 mx-auto flex items-center justify-center bg-white rounded-full shadow-lg transform transition-all duration-300 hover:scale-110">

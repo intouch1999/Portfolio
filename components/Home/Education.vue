@@ -3,22 +3,32 @@
         class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh align-middle m-4">
         <div data-aos="fade-up"
             class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 w-full">
-            <div class="flex flex-row justify-center items-center group transition-colors duration-300 my-4 md:my-8">
-                <div class="flex flex-col items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 group-hover:text-blue-600">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
-                    </svg>
+            <div class="flex flex-col items-center justify-center text-center my-4 md:my-8 md:py-8">
+                <div
+                    class="flex flex-row justify-center items-center group transition-colors duration-300 ">
+                    <div class="flex flex-col items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 group-hover:text-blue-600 text-blue-500 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                        </svg>
+                    </div>
+                    <h1 class=" text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">Educations</h1>      
+
                 </div>
-                <h1
-                    class="text-3xl font-bold tracking-tight text-gray-900 m-4 group-hover:text-blue-600 transition-colors duration-300">
-                    Educations
-                </h1>
+                <div>
+                    <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+                    <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
+                    <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
+                </div>
             </div>
             <ol class="relative w-full grid grid-cols-2 md:grid-cols-8 gap-4">
-                <li v-for="(education, index) in education.data" :key="index" class="mb-10 ml-6 col-span-2 md:col-start-2 md:col-span-4">
-                    <div class="flex items-start">
+                <li v-for="(education, index) in education.data" :key="index"
+                    class="mb-10 ml-6 col-span-2 md:col-start-2 md:col-span-4"><div class=" bg-gray-100 rounded-xl">
+                    <div class="flex items-start px-8 py-8">
+                        
+
+                        
                         <span class="flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
@@ -46,6 +56,7 @@
                             </time>
                         </div>
                     </div>
+                </div>
                 </li>
             </ol>
         </div>
