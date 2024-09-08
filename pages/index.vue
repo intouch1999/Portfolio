@@ -39,7 +39,8 @@ const sections = [
 { id: 'profile', component: HomeProfile },
 { id: 'About me', component: HomeAbout },
 { id: 'Experiences', component: HomeExperience },
+{ id: 'Educations', component: HomeEducation },
 { id: 'Skills', component: HomeSkill },
-{ id: 'Educations', component: HomeEducation }
+
 ]
 </script>
