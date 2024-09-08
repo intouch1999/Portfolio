@@ -1,12 +1,15 @@
 <template>
+    
     <div class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh align-middle m-4 ">
         <div data-aos="fade-up" class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 w-full">
     <div class="container px-6 py-12 mx-auto">
         <div class="text-center">
-            <h1 class="mt-2 text-2xl font-semibold text-blue-500 md:text-3xl">Contact us</h1>
+            <h1 class="mt-2 text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">Contact us</h1>            
+            <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+            <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
+            <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
 
         </div>
-
         <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
             <div class="flex flex-col items-center justify-center text-center">
                 <span class="p-3 text-blue-500 rounded-full bg-blue-100/80">
@@ -15,7 +18,7 @@
                     </svg>
                 </span>
 
-                <h2 class="mt-4 text-lg font-medium text-gray-800">{{ about.details[1].label }}</h2>
+                <h2 class="mt-4 text-lg font-medium text-gray-800 hover:text-blue-600 transition-colors duration-300">{{ about.details[1].label }}</h2>
                 <p class="mt-2 text-blue-500">{{ about.details[1].value }}</p>
             </div>
 
@@ -27,7 +30,7 @@
                     </svg>
                 </span>
                 
-                <h2 class="mt-4 text-lg font-medium text-gray-800">{{ about.details[3].label }}</h2>
+                <h2 class="mt-4 text-lg font-medium text-gray-800 hover:text-blue-600 transition-colors duration-300">{{ about.details[3].label }}</h2>
                 <p class="mt-2 text-blue-500">{{ about.details[3].value }}</p>
             </div>
 
@@ -38,7 +41,7 @@
                     </svg>
                 </span>
                 
-                <h2 class="mt-4 text-lg font-medium text-gray-800">Phone</h2>
+                <h2 class="mt-4 text-lg font-medium text-gray-800 hover:text-blue-600 transition-colors duration-300">Phone</h2>
                 <p class="mt-2 text-blue-500">{{ about.details[2].value }}</p>
             </div>
         </div>
