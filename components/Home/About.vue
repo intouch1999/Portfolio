@@ -8,12 +8,19 @@
               <p v-for="(detail, index) in about.details" :key="index" class="text m-4">
                 {{ detail.label }}: {{ detail.value }}
               </p>
-              <a :href="about.Github" class="text-black m-4" target="_blank" rel="noopener noreferrer">GITHUB: {{ about.Github }}</a>
+              <div>
+              <span> GITHUB: </span>
+              <a :href="about.Github" class="text-black m-4 hover:text-blue-500 transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+{{ about.Github }}
+</a></div>
             </div>
           </div>
-          <div class="basis-full md:basis-1/2 m-4">
-            <p class="text text-justify indent-8">{{ about.description }}</p>
-          </div>
+          <div class="basis-full md:basis-1/2 lg:basis-3/4 m-4">
+  <div data-aos="fade-up" class="bg-white shadow-lg rounded-lg p-6">
+    <p class="text text-justify indent-8 p-4">{{ about.description }}</p>
+  </div>
+</div>
+
         </div>
       </div>
     </div>
