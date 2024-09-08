@@ -3,7 +3,7 @@
         class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh align-middle m-4">
         <div data-aos="fade-up"
             class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 w-full">
-            <div class="flex flex-row justify-center items-center group transition-colors duration-300">
+            <div class="flex flex-row justify-center items-center group transition-colors duration-300 my-4 md:my-8">
                 <div class="flex flex-col items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6 group-hover:text-blue-600">
