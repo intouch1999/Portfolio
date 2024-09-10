@@ -5,13 +5,14 @@
         @click.self="closeModal"
         class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
       >
-        <div class="relative">
-          <button
+      <button
             @click="closeModal"
             class="absolute top-0 right-0 text-white text-3xl px-4 py-2"
           >
             &times;
           </button>
+        <div class="relative">
+
           <transition name="zoom">
             <NuxtImg
               v-if="isOpen"
