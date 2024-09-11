@@ -1,8 +1,8 @@
 <template>
-    <section class="bg-blue-900 h-screen md:flex md:items-center md:justify-center">
+    <section class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 h-screen md:flex md:items-center md:justify-center">
         <div class="container px-6 py-10 mx-auto text-center">
             <h1
-                class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl hover:text-blue-500 transition-colors duration-300">
+                class="text-5xl font-bold text-white capitalize hover:text-yellow-400 transition-colors duration-300 tracking-wider">
                 Portfolio</h1>
 
             <div
