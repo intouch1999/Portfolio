@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-teal-50 ">
+  <div class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 ">
     <!-- <nav>
         <ul class="flex space-x-4">
           <li><a href="#profile" class="text-blue-500 hover:underline">Profile</a></li>
