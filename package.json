@@ -18,5 +18,8 @@
     "swiper": "^11.1.12",
     "vue": "latest",
     "vue-scrollto": "^2.20.0"
+  },
+  "devDependencies": {
+    "daisyui": "^4.12.10"
   }
 }
