@@ -1,8 +1,8 @@
 <template>
   <section
     class="relative bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 min-h-screen flex items-center justify-center pt-24">
-    <div class="container px-6 py-10 mx-auto text-center">
-      <section class="bg-white rounded-2xl shadow-lg p-10" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="container px-6 py-10 mx-auto md:w-5/6">
+      <section class="bg-white rounded-2xl shadow-lg p-10  items-center " data-aos="zoom-in" data-aos-duration="1000">
         <div class="container mx-auto">
           <h1 data-aos="fade-up"
             class=" text-3xl sm:text-4xl lg:text-5xl font-bold text-black capitalize hover:text-yellow-400 transition-colors duration-300 tracking-wider">
