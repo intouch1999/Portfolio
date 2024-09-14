@@ -16,7 +16,7 @@
           <transition name="zoom">
             <NuxtImg
               v-if="isOpen"
-              class="rounded-xl max-w-full max-h-screen"
+              class="rounded-xl max-h-screen"
               :src="imgSrc"
               alt="Modal Image"
               loading="lazy"
