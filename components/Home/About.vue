@@ -1,21 +1,22 @@
 <template>
 <Layout>
     <div data-aos="zoom-in"
-      class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 w-full">
-      <div class="flex flex-col items-center justify-center text-center md:py-8">
-          <h1 class="mt-2 text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">{{ about.about }}</h1>      
-        <div class="flex flex-col md:flex-row items-center justify-center w-full">
-          <div class="basis-full md:basis-1/2 lg:basis-3/4 m-4">
-            <div data-aos="fade-right" class="transition-all duration-500 hover:scale-105">
-              <p class="text text-justify indent-8 p-4 hover:text-blue-500">
-                {{ about.description }}
-              </p>
+      class="container px-6 py-16 mx-auto">
+        <main class="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
+            <div class="absolute w-full bg-white -z-10 md:h-96 rounded-2xl"></div>
+            
+            <div class="w-full p-6 bg-white md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+                <img class="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl" src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="client photo" />
+                
+                <div class="mt-2 md:mx-6">
+                    <div>
+                        <p class="text-xl text-black font-medium tracking-tight ">{{about.name}} </p>
+                    </div>
+
+                    <p class="mt-4 text-base text-lg leading-relaxed  md:text-xl"> “{{about.description}}”.</p>
+                </div>
             </div>
-
-          </div>
-
-        </div>
-      </div>
+        </main>
     </div>
 </Layout>
 </template>

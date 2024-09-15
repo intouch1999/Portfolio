@@ -13,7 +13,7 @@
       </nav> -->
     <Sidebar :sections="sections" class="z-50" />
     <main>
-      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 bg-blue-100 border-2 rounded-xl">        
+      <div class="mx-auto max-w-7xl bg-blue-100 border-2 rounded-xl">        
         <component
     v-for="(section, index) in sections"
     :is="section.component"
@@ -29,7 +29,6 @@
 
 
 <script setup>
-import HomeProfile from '~/components/Home/Profile.vue'
 import HomeAbout from '~/components/Home/About.vue'
 import HomeExperience from '~/components/Home/Experience.vue'
 import HomeSkill from '~/components/Home/Skill.vue'
@@ -38,7 +37,6 @@ import HomeContact from '~/components/Home/Contact.vue'
 
 // Array of components and their respective IDs
 const sections = [
-{ id: 'profile', component: HomeProfile },
 { id: 'About me', component: HomeAbout },
 { id: 'Experiences', component: HomeExperience },
 { id: 'Educations', component: HomeEducation },
