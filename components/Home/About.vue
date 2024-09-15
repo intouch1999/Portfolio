@@ -13,7 +13,7 @@
                         <p class="text-xl text-black font-medium tracking-tight ">{{about.name}} </p>
                     </div>
 
-                    <p class="mt-4 text-base text-lg leading-relaxed  md:text-xl"> “{{about.description}}”.</p>
+                    <p class="mt-4 text-base leading-relaxed  md:text-xl"> “{{about.description}}”.</p>
                 </div>
             </div>
         </main>

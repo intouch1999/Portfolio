@@ -19,8 +19,8 @@ export const useExperience = () => {
             { 
                 job_title: 'PROJECTS',
                 project: [
-                    {label: "Beverage Shop Management System", value: `Developed a comprehensive management system for a beverage shop, streamlining inventory management, order processing, and record keeping.` },
-                    {label: "Pawn Shop Management System", value: `Developed a management system for pawn shops to streamline the process of managing item deposits and associated documentation.` }
+                    {id: 1,label: "Pawn Shop Management System", value: `Developed a management system for pawn shops to streamline the process of managing item deposits and associated documentation.` },
+                    {id: 2,label: "Water Delivery Management System", value: `Developed a comprehensive management system for a beverage shop, streamlining inventory management, order processing, and record keeping.` }
                 ],
             }
         ]

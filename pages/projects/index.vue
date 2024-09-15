@@ -10,7 +10,7 @@
                 <NuxtLink v-for="(project, projectIndex) in projects.data" :key="projectIndex"  data-aos="zoom-in" data-aos-duration="1000"
                     :to="`/projects/${project.id}`"
                     class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group shadow-xl border border-gray-200 hover:scale-105 transition-transform duration-300 opacity-90"
-                    :style="{ backgroundImage: `url(${project.img[0]})` }"
+                    :style="{ backgroundImage: `url(/intouch-code/${project.img[0]})` }"
                     
                     >
                     <div 

@@ -26,5 +26,8 @@ export default defineNuxtConfig({
 //     host: '172.16.16.16',
 //     port: 3000
 //   }
+app: {
+  baseURL: '/intouch-code/', 
+},
 
 })
