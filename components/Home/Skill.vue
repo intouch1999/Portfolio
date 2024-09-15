@@ -9,6 +9,10 @@
         </div>
         
         
+<<<<<<< HEAD
+=======
+        <client-only>
+>>>>>>> 0b81cb2d26795f1ad59d59320bc4b524393a3329
         <Swiper
           :modules="[SwiperAutoplay, SwiperEffectCoverflow, SwiperPagination]"
           :slides-per-view="3"
@@ -58,6 +62,10 @@
             </p>
           </SwiperSlide>
         </Swiper>
+<<<<<<< HEAD
+=======
+        </client-only>
+>>>>>>> 0b81cb2d26795f1ad59d59320bc4b524393a3329
         <div @click="toggleSkillsList" class="cursor-pointer text-center flex flex-col justify-center align-middle">
           <p class="text-gray-700 group-hover:text-blue-600 transition-colors duration-300 font-semibold mb-2">Show More</p>
           <div class="  text-center flex justify-center">
