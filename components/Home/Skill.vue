@@ -48,13 +48,13 @@
               spaceBetween: 20,
             },
           }"
-          class="w-full swiper-container my-8"
+          class="w-full swiper-container my-8 -z-10"
         >
-          <SwiperSlide v-for="skill in skills" :key="skill.icon" class="text-center group">
-            <div class="w-24 h-24 mx-auto flex items-center justify-center bg-white rounded-full shadow-lg transform transition-all duration-300 hover:scale-110">
-              <NuxtImg :src="`/img/skills/${skill.icon}.svg`" :class="skill.class" class="w-16 h-16 object-contain" :alt="skill.title"  :srcset="null"  />
+          <SwiperSlide v-for="skill in skills" :key="skill.icon" class="text-center group bg-white rounded-2xl shadow-lg p-3 md:p-6 hover:shadow-xl transition-shadow duration-300">
+            <div class="w-12 h-12 md:w-24 md:h-24 mx-auto flex items-center justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 border-2  rounded-full shadow-lg transform transition-all duration-300 hover:scale-110">
+              <NuxtImg :src="`/img/skills/${skill.icon}.svg`" :class="skill.class" class="w-8 h-8 md:w-16 md:h-16 object-contain" :alt="skill.title"  :srcset="null"  />
             </div>
-            <p class="mt-4 text-gray-700 group-hover:text-blue-600 transition-colors duration-300 font-semibold">
+            <p class="text-xs mt-4 text-gray-700 group-hover:text-blue-600 transition-colors duration-300 font-semibold">
               {{ skill.title }}
             </p>
           </SwiperSlide>
