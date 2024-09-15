@@ -1,5 +1,6 @@
 export const useAbout = () => {
     return useState('about', () => ({
+        name: 'Intouch Suwanthanee',
         about: `About ME`,
         details: [
             { label: 'Full Name', value: 'Intouch Suwanthanee' },

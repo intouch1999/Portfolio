@@ -57,9 +57,9 @@
                     </h3>
                     <!-- Projects -->
                     <div v-for="(project, projectIndex) in experience.project" :key="projectIndex" class="mb-4 group">
-                        <h5
+                        <NuxtLink :to="`/projects/${project.id}`"
                             class="text-md font-semibold text-gray-700 mb-2 group-hover:text-blue-600 transition-colors duration-300">
-                            {{ project.label }}</h5>
+                            {{ project.label }}</NuxtLink>
                             
                         <p class="font-normal text-sm text-gray-500 group-hover:text-gray-700 
                                   transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out">
