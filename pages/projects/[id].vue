@@ -75,7 +75,7 @@
             <div class="grid grid-cols-2 md:flex md:flex-row justify-center mt-6 " data-aos="fade-up">
               <div class="flex flex-col items-center m-4 group" v-for="language in project.lang">
                 <div class="p-1 bg-white rounded-full md:transition-transform md:transform md:hover:scale-125">
-                  <img :key="language"
+                  <NuxtImg :key="language"
                     class="w-5 h-5  m-2  rounded-full"
                     :src="`/img/skills/${language}.svg`" alt="project icon" />
                 </div>
@@ -94,18 +94,16 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-16" 
           data-aos-delay="600">
-          <ClientOnly>
             <div v-for="(img, index) in project.img" :key="index" data-aos="fade-up"
               class="relative group transform hover:scale-105 transition-transform duration-500 cursor-pointer"
               @click="openModal(img)">
-              <NuxtImg :src="img" alt="Project Image"
-                class="w-full h-80 object-cover rounded-lg shadow-xl transition-all duration-500 ease-in-out group-hover:shadow-2xl border bottom-2"
+              <NuxtImg :src="`${img}`" alt="Project Image"
+                class="w-full h-70 object-cover rounded-lg shadow-xl transition-all duration-500 ease-in-out group-hover:shadow-2xl border bottom-2"
                 loading="lazy" decoding="auto" />
               <div
                 class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center rounded-lg">
               </div>
             </div>
-          </ClientOnly>
         </div>
       </section>
     </div>
