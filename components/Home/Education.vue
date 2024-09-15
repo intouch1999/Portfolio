@@ -1,6 +1,5 @@
 <template>
-    <div
-        class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh align-middle m-4">
+   <Layout>
         <div data-aos="fade-up"
             class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 w-full">
             <div class="flex flex-col items-center justify-center text-center my-4 md:my-8 md:py-8">
@@ -60,7 +59,7 @@
                 </li>
             </ol>
         </div>
-    </div>
+</Layout>
 </template>
 
 <script setup>
