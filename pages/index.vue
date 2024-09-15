@@ -19,6 +19,7 @@
     :is="section.component"
     :id="section.id"
     :key="index"
+    class="mb-8"
   />
       </div>
     </main>
