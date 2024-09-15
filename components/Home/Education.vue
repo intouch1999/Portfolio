@@ -21,10 +21,11 @@
                     <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
                 </div>
             </div>
-            <ol class="relative w-full grid grid-cols-2 md:grid-cols-8 gap-4">
-                <li v-for="(education, index) in education.data" :key="index"
-                    class="mb-10 ml-6 col-span-2 md:col-start-2 md:col-span-4"><div class=" bg-gray-100 rounded-xl">
-                    <div class="flex items-start px-8 py-8">
+            <div class="flex flex-col md:items-center">
+            <div class=" md:w-1/2">
+                <div v-for="(education, index) in education.data" :key="index"
+                    class="mb-10"><div class=" bg-gray-100 rounded-xl">
+                    <div class=" px-8 py-8">
                         
 
                         
@@ -56,8 +57,9 @@
                         </div>
                     </div>
                 </div>
-                </li>
-            </ol>
+            </div>
+            </div>
+        </div>
         </div>
 </Layout>
 </template>

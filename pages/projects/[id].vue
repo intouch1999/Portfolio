@@ -72,8 +72,7 @@
             </h1>
           </div>
           </code>
-            <div class="grid grid-cols-2 md:flex md:flex-row justify-center mt-6 " data-aos="fade-up"
-              data-aos-delay="500">
+            <div class="grid grid-cols-2 md:flex md:flex-row justify-center mt-6 " data-aos="fade-up">
               <div class="flex flex-col items-center m-4 group" v-for="language in project.lang">
                 <div class="p-1 bg-white rounded-full md:transition-transform md:transform md:hover:scale-125">
                   <img :key="language"
