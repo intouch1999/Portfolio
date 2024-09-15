@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center justify-center mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 h-svh">
+<Layout>
       <div class="flex flex-col items-center justify-center text-center w-full" data-aos="fade-up">
         <div class="text-center mb-4">
           <h1 class="mt-2 text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">My Skills</h1>      
@@ -90,7 +90,7 @@
           </div>
         </transition>
       </div>
-    </div>
+</Layout>
     
   </template>
   
