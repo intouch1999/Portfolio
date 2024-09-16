@@ -1,11 +1,11 @@
 <template>
     <Layout>
-        <div data-aos="fade-up" class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 w-full ">
+        <div data-aos="fade-up" class="bg-white shadow-lg rounded-2xl border-2 p-6 hover:shadow-xl transition-shadow duration-300 w-full ">
             <div class="flex flex-col items-center justify-center">
                 <div class="flex flex-col items-center justify-center text-center md:py-8">
-                    <h1 class="mb-1 text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">Work Experience</h1>      
-                    <div class="flex flex-row">
-                                                <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+                    <h1 class="mb-2 text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">Work Experience</h1>      
+                    <div class="flex flex-row mb-4">
+                <span class="inline-block w-48 h-1 bg-blue-500 rounded-full"></span>
                 <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
                 <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
                     </div>
