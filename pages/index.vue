@@ -33,6 +33,7 @@
 import HomeAbout from '~/components/Home/About.vue'
 import HomeExperience from '~/components/Home/Experience.vue'
 import HomeSkill from '~/components/Home/Skill.vue'
+import HomeITSkill from '~/components/Home/ITSkill.vue'
 import HomeEducation from '~/components/Home/Education.vue'
 import HomeContact from '~/components/Home/Contact.vue'
 
@@ -42,6 +43,7 @@ const sections = [
 { id: 'Experiences', component: HomeExperience },
 { id: 'Educations', component: HomeEducation },
 { id: 'Skills', component: HomeSkill },
+{ id: 'IT Skills', component: HomeITSkill },
 { id: 'Contact', component: HomeContact },
 
 ]
