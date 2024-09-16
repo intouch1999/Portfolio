@@ -3,11 +3,11 @@
 
         <div data-aos="fade-up" class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 w-full">
     <div class="container px-6 py-12 mx-auto">
-        <div class="text-center">
-            <h1 class="mt-2 text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">Contact</h1>            
-            <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-            <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
-            <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
+        <div class="text-center group text-blue-500 transition-colors hover:text-yellow-600 duration-300">
+            <h1 class="mt-2 text-2xl font-semibold  md:text-3xl">Contact</h1>            
+            <span class="inline-block w-24 h-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
+            <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
+            <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
 
         </div>
         <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">

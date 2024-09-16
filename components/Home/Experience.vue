@@ -2,12 +2,20 @@
     <Layout>
         <div data-aos="fade-up" class="bg-white shadow-lg rounded-2xl border-2 p-6 hover:shadow-xl transition-shadow duration-300 w-full ">
             <div class="flex flex-col items-center justify-center">
-                <div class="flex flex-col items-center justify-center text-center md:py-8">
-                    <h1 class="mb-2 text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">Work Experience</h1>      
+                <div class="flex flex-col items-center justify-center text-center group text-blue-500 hover:text-yellow-600 transition-colors duration-300 md:py-8">
+                    <div class="flex flex-row justify-center items-center  align-middle mb-2 ">
+
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                    </svg>
+
+                    <h1 class="ml-2 text-2xl font-semibold md:text-3xl ">Work Experiences</h1>  
+                </div>    
                     <div class="flex flex-row mb-4">
-                <span class="inline-block w-48 h-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
+                <span class="inline-block w-48 h-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
+                <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
+                <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
                     </div>
 
                 </div>

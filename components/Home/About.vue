@@ -10,10 +10,10 @@
                 
                 <div class="mt-2 md:mx-6">
                     <div>
-                        <p class="text-xl text-black font-medium tracking-tight ">{{about.name}} </p>
+                        <p class="text-2xl text-black font-medium tracking-tight ">{{about.name}} </p>
                     </div>
 
-                    <p class="mt-4 text-base leading-relaxed  lg:text-xl"> “{{about.description}}”.</p>
+                    <p class="mt-4 text-base leading-relaxed  lg:text-xl"> “{{about.description}}”</p>
                 </div>
             </div>
         </main>
