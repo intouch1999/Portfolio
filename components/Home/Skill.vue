@@ -49,7 +49,7 @@
           }"
           class="w-full swiper-container my-8 -z-10"
         >
-          <SwiperSlide v-for="skill in skills" :key="skill.icon" class="text-center group bg-white rounded-2xl shadow-lg p-3 md:p-6 hover:shadow-xl transition-shadow duration-300">
+          <SwiperSlide v-for="skill in skills" :key="skill.icon" class="text-center group bg-white border-2 rounded-2xl shadow-lg p-3 md:p-6 hover:shadow-xl transition-shadow duration-300">
             <div class="w-12 h-12 md:w-24 md:h-24 mx-auto flex items-center justify-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 border-2  rounded-full shadow-lg transform transition-all duration-300 hover:scale-110">
               <NuxtImg :src="`/img/skills/${skill.icon}.svg`" :class="skill.class" class="w-8 h-8 md:w-16 md:h-16 object-contain" :alt="skill.title"  :srcset="null"  />
             </div>
@@ -81,7 +81,7 @@
           <div v-if="showSkillsList" class="w-full max-w-3xl bg-white rounded-lg shadow-xl p-6">
             <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
               <li v-for="skill in skills" :key="skill.icon" 
-                  class="flex items-center space-x-2 p-2 rounded-md transition-colors duration-300 hover:bg-blue-50 justify-center">
+                  class="flex items-center space-x-2 p-2 rounded-md transition-colors duration-300 hover:bg-blue-300 justify-center">
                 <span class="text-sm font-medium text-gray-700">{{ skill.title }}</span>
               </li>
             </ul>

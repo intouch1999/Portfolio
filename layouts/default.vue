@@ -2,7 +2,7 @@
   <header>
     <div v-if="isOpen" class="fixed inset-0 bg-black opacity-50 z-40 md:hidden" @click="closeMenu"></div>
     
-    <nav :class="['fixed w-full bg-white shadow z-50 opacity-90 transition-transform duration-300', { 'transform -translate-y-full': isNavHidden }]">
+    <nav :class="['fixed w-full bg-white shadow z-50 opacity-90 transition-transform duration-300 border-b-2 border-gray-300', { 'transform -translate-y-full': isNavHidden }]">
       <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center z-50">
         <div class="flex items-center justify-between">
           <NuxtLink exact href="/" class="">

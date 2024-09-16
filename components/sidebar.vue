@@ -5,7 +5,7 @@
           <nav class="flex flex-1 flex-col gap-y-4 pt-10">
             <a v-for="section in sections" :key="section.id" :href="'#' + section.id"
                :class="[
-                 'group relative rounded-xl p-2 text-blue-600 transition-colors duration-200',
+                 'group relative rounded-xl p-2 text-blue-600 transition-colors duration-200 shadow-lg',
                  activeSection === section.id ? 'bg-yellow-600 text-white' : 'bg-blue-600 hover:bg-blue-800'
                ]">
               <div class="absolute inset-y-0 right-8 hidden items-center group-hover:flex">
