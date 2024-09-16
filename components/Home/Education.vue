@@ -2,34 +2,34 @@
    <Layout>
         <div data-aos="fade-up"
             class="bg-white border-2 shadow-lg rounded-2xl p-6 hover:shadow-xl transition-shadow duration-300 w-full">
-            <div class="flex flex-col items-center justify-center text-center my-4 md:my-8 md:py-8">
+            <div class="flex flex-col items-center justify-center text-center my-4 md:my-8 md:py-8 group hover:text-yellow-600 text-blue-500 transition-colors duration-300">
                 <div
-                    class="flex flex-row justify-center items-center group transition-colors duration-300 ">
+                    class="flex flex-row justify-center items-center  ">
                     <div class="flex flex-col items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6 group-hover:text-blue-600 text-blue-500 mr-2">
+                            stroke="currentColor" class="w-6 h-6  mr-2">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
                         </svg>
                     </div>
-                    <h1 class=" text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">Educations</h1>      
+                    <h1 class=" text-2xl font-semibold  md:text-3xl  ">Educations</h1>      
 
                 </div>
                 <div>
-                    <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-                    <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
-                    <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
+                    <span class="inline-block w-40 h-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
+                    <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
+                    <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
                 </div>
             </div>
             <div class="flex flex-col md:items-center">
             <div class=" md:w-1/2">
                 <div v-for="(education, index) in education.data" :key="index"
                     class="mb-10"><div class=" bg-gray-100 rounded-xl">
-                    <div class=" px-8 py-8">
+                    <div class=" px-8 py-8 flex">
                         
 
                         
-                        <span class="flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full mr-4">
+                        <span class="flex items-center justify-center w-8 h-8 bg-gray-200 text-black rounded-full mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -43,12 +43,12 @@
                                 {{ education.name }}
                             </h3>
                             <h4
-                                class="text-base font-normal text-gray-500 mb-1 hover:text-blue-500 transition-colors duration-300">
-                                {{ education.degree }}
+                                class="text-base font-normal text-gray-900 mb-1 hover:text-blue-500 transition-colors duration-300">
+                                {{ education.branch }}
                             </h4>
                             <h4
                                 class="text-base font-normal text-gray-500 mb-1 hover:text-blue-500 transition-colors duration-300">
-                                {{ education.major }}
+                                {{ education.degree }}
                             </h4>
                             <time
                                 class="block mb-2 text-sm font-normal leading-none text-gray-400 hover:text-blue-400 transition-colors duration-300">

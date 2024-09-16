@@ -1,11 +1,17 @@
 <template>
 <Layout>
       <div class="flex flex-col items-center justify-center text-center w-full" data-aos="fade-up">
-        <div class="text-center mb-4">
-          <h1 class="mt-2 text-2xl font-semibold text-blue-500 md:text-3xl hover:text-blue-600 transition-colors duration-300">My Skills</h1>      
-        <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-            <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
-            <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
+        <div class="text-center mb-4 group text-blue-500 transition-colors hover:text-yellow-600 duration-300">
+          <div class="flex items-center justify-center  ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+        </svg>
+
+          <h1 class="ml-2 text-2xl font-semibold  md:text-3xl ">Skills</h1>     
+        </div> 
+        <span class="inline-block w-24 h-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
+            <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
+            <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
         </div>
         
         

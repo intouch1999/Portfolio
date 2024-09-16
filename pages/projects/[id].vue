@@ -5,7 +5,7 @@
       <section class="bg-white rounded-2xl shadow-lg p-10  items-center " data-aos="zoom-in" data-aos-duration="1000">
         <div class="container mx-auto">
           <h1 data-aos="fade-up"
-            class=" text-3xl sm:text-4xl lg:text-5xl font-bold text-black capitalize hover:text-yellow-400 transition-colors duration-300 tracking-wider">
+            class=" text-3xl sm:text-4xl lg:text-5xl font-bold text-black capitalize hover:text-yellow-600 transition-colors duration-300 tracking-wider">
             {{ project.name }}
           </h1>
         </div>
@@ -19,12 +19,12 @@
 
         <div class="container mx-auto">
           <h1
-            class="text-xl text-black sm:text-2xl lg:text-3xl font-semibold capitalize hover:text-yellow-400 transition-colors duration-300 tracking-wider mt-6"
+            class="text-xl text-black sm:text-2xl lg:text-3xl font-semibold capitalize hover:text-yellow-600 transition-colors duration-300 tracking-wider mt-6"
             data-aos="fade-up" data-aos-delay="200">
             Features
           </h1>
 
-            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2" data-aos="fade-up">
+            <div class="grid grid-cols-1 gap-8 mt-6 xl:mt-6 xl:gap-12 md:grid-cols-2" data-aos="fade-up">
               <div v-for="(feature, index) in project.fea" :key="index" 
                 class="p-6 border rounded-xl shadow-md transition-all transform hover:scale-105 duration-300 hover:shadow-2xl bg-blue-50">
                 <div class="md:flex md:items-start md:-mx-4">
@@ -48,11 +48,11 @@
             
         </div>
         <div class="flex justify-center mt-8" data-aos="fade-up" data-aos-delay="400">
-          <div class="mockup-code bg-primary text-primary-content w-full md:w-3/4 lg:w-1/2">
+          <div class="mockup-code   w-full md:w-3/4 lg:w-1/2">
             <code data-aos="fade-up" data-aos-delay="400">
-            <div class="flex items-center justify-center space-x-4 group transition-colors duration-300 tracking-wider">
+            <div class="flex items-center justify-center space-x-4 group transition-colors hover:text-yellow-600 duration-300 tracking-wider">
             <svg
-              class="w-6 h-6 md:w-8 md:h-8 text-black group-hover:text-yellow-400"
+              class="w-6 h-6 md:w-8 md:h-8 "
               fill="currentColor"
               viewBox="0 0 640 512"
               xmlns="http://www.w3.org/2000/svg"
@@ -65,10 +65,10 @@
             </svg>
             <h1
               data-aos="fade-up"
-              class="text-2xl sm:text-2xl lg:text-3xl font-bold text-black capitalize group-hover:text-yellow-400"
+              class="text-2xl sm:text-2xl lg:text-3xl font-boldcapitalize "
               data-aos-delay="400"
             >
-            Code Languages<span class="inline-block w-2 h-1 bg-black rounded-full blink-animation group-hover:bg-yellow-400"></span>
+            Code Languages<span class="inline-block w-2 h-1 bg-slate-400 rounded-full blink-animation group-hover:bg-yellow-600 "></span>
             </h1>
           </div>
           </code>
