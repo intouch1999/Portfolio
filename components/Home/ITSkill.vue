@@ -15,12 +15,12 @@
                 <span class="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
                 <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full group-hover:bg-yellow-600 duration-300"></span>
             </div>
-            <div class="flex flex-row gap-x-24 w-full">
-            <NuxtImg src="/img/itsupport.png" alt="IT-Support" class="w-1/2 h-1/2 object-cover" />
-            <div class="flex flex-col  items-start justify-center text-left w-full">
-            <li class="list-disc list list-inside mb-2" v-for="(ITSkill , title) in ITSkill.data.skills" :key="title">
-                {{ title }}
-                {{ ITSkill }}
+            <div class="flex flex-col items-center lg:flex-row gap-x-24 w-full">
+            <NuxtImg src="/img/itsupport.png" alt="IT-Support" class="mb-4 w-1/2 mx-auto my-auto h-1/2 object-cover" />
+            <div class="flex flex-col  items-start justify-center text-left w-full ">
+            <li class="list-disc list list-inside mb-2 group" v-for="(ITSkill , title) in ITSkill.data.skills" :key="title">
+                <span class="font-bold text-black group-hover:text-yellow-600 mr-2 transform group-hover:translate-x-2 transition-all duration-300 ease-in-out" >{{ title }} </span>
+                <span class="text-gray-500 inline-block transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out">{{ ITSkill }}</span>
             </li>
             </div>
             </div>
@@ -35,23 +35,9 @@
       <script setup>
       
       const ITSkill = useITSkill();
-      console.log(ITSkill.value.data)
       </script>
       
       <style scoped>
-      .swiper-container {
-        padding-bottom: 40px;
-      }
-      
-      :deep(.swiper-pagination) {
-        bottom: 0 !important;
-      }
-      
-      :deep(.swiper-pagination-bullet) {
-        background-color: #4b5563;
-      }
-      
-      :deep(.swiper-pagination-bullet-active) {
-        background-color: #2563eb;
-      }
+
+
       </style>
