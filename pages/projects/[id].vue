@@ -97,7 +97,7 @@
             <div v-for="(img, index) in project.img" :key="index" data-aos="fade-up"
               class="relative group transform hover:scale-105 transition-transform duration-500 cursor-pointer"
               @click="openModal(img)">
-              <NuxtImg :src="`${img}`" alt="Project Image"
+              <NuxtImg :src="`${img}`" alt="Project Image" 
                 class="w-full h-70 object-cover rounded-lg shadow-xl transition-all duration-500 ease-in-out group-hover:shadow-2xl border bottom-2"
                 loading="lazy" decoding="auto" />
               <div
@@ -121,10 +121,33 @@ const project = ref({});
 const isModalOpen = ref(false);
 const selectedImg = ref('');
 
+watch(project, (newProject) => {
+  if (newProject.name) {
+    useHead({
+      title: `Portfolio - ${newProject.name}`,
+      meta: [
+        { name: 'description', content: newProject.desc || 'Description of the project.' },
+        { name: 'keywords', content: 'project, web development, frontend, backend' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+        { charset: 'UTF-8' },
+      ]
+    });
+  }
+}, { immediate: true });
+
 const fetchProject = async () => {
   const id = route.params.id;
   const projects = useProjects().value.data;
-  project.value = projects.find((proj) => proj.id === parseInt(id));
+  try{
+    if (projects) {
+      project.value = projects.find((proj) => proj.id === parseInt(id));
+    } else {
+      console.log('No projects found.');
+    } 
+  } catch (error) {
+    console.error('Error fetching projects:', error);
+  }
+  
 };
 
 const openModal = (img) => {

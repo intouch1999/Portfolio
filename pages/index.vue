@@ -13,7 +13,7 @@
       </nav> -->
     <Sidebar :sections="sections" class="z-50" />
     <main>
-      <div class="mx-auto max-w-7xl bg-blue-100 border-2 rounded-xl">        
+      <div class="mx-auto max-w-screen-xl bg-blue-100 border-2 rounded-xl">        
         <component
     v-for="(section, index) in sections"
     :is="section.component"
@@ -47,4 +47,14 @@ const sections = [
 { id: 'Contact', component: HomeContact },
 
 ]
+
+  useHead({
+    title: 'Portfolio - Home',
+    meta: [
+      { name: 'description', content: 'My portfolio was created to showcase my learning and projects in web development. Built using the Nuxt Framework to demonstrate modern web development skills and expertise.' },
+      { name: 'keywords', content: 'portfolio, Nuxt, web development, Nuxt Framework, Tailwind CSS' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+      { charset: 'UTF-8' },
+    ]
+  })
 </script>
