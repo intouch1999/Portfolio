@@ -26,4 +26,13 @@
 
 <script setup>
 const projects = useProjects();
+useHead({
+  title: 'Portfolio - Projects',
+  meta: [
+  { name: 'description', content: 'This is a detailed description of the project, showcasing my skills in web development.' },
+  { name: 'keywords', content: 'project, web development, frontend, backend' },
+  { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+  { charset: 'UTF-8' },
+  ]
+})
 </script>
