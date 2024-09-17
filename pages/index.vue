@@ -45,4 +45,14 @@ const sections = [
 { id: 'Contact', component: HomeContact },
 
 ]
+
+  useHead({
+    title: 'Portfolio - Home',
+    meta: [
+      { name: 'description', content: 'My portfolio was created to showcase my learning and projects in web development. Built using the Nuxt Framework to demonstrate modern web development skills and expertise.' },
+      { name: 'keywords', content: 'portfolio, Nuxt, web development, Nuxt Framework, Tailwind CSS' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+      { charset: 'UTF-8' },
+    ]
+  })
 </script>

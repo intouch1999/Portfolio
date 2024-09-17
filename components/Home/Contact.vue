@@ -19,7 +19,9 @@
                 </span>
 
                 <h2 class="mt-4 text-lg font-medium text-gray-800 hover:text-blue-600 transition-colors duration-300">{{ about.details[1].label }}</h2>
-                <p class="mt-2 text-blue-500">{{ about.details[1].value }}</p>
+                <a :href="`mailto:${about.details[1].value}`" class="mt-2 text-blue-500 hover:text-yellow-300 transition-colors duration-300">
+                    {{ about.details[1].value }}
+                </a>
             </div>
 
             <div class="flex flex-col items-center justify-center text-center">
@@ -31,7 +33,7 @@
                 </span>
                 
                 <h2 class="mt-4 text-lg font-medium text-gray-800 hover:text-blue-600 transition-colors duration-300">{{ about.details[3].label }}</h2>
-                <p class="mt-2 text-blue-500">{{ about.details[3].value }}</p>
+                <a href="https://maps.app.goo.gl/AnTmNc1bMgdp8fa56" class="mt-2 text-blue-500 hover:text-yellow-300 transition-colors duration-300">{{ about.details[3].value }}</a>
             </div>
 
             <div class="flex flex-col items-center justify-center text-center">
@@ -42,7 +44,7 @@
                 </span>
                 
                 <h2 class="mt-4 text-lg font-medium text-gray-800 hover:text-blue-600 transition-colors duration-300">Phone</h2>
-                <p class="mt-2 text-blue-500">{{ about.details[2].value }}</p>
+                <a :href="`tel:${about.details[2].value}`" class="mt-2 text-blue-500 hover:text-yellow-300 transition-colors duration-300">{{ about.details[2].value }}</a>
             </div>
         </div>
     </div>
