@@ -14,10 +14,10 @@
                     </div>
 
                     <p class="mt-4 text-base leading-relaxed   md:text-xl"> “{{about.description}}”.</p>
-                    <div class="lg:mt-4 flex justify-center">
-                    <a href="/intouch-code/docs/intouch_resume.pdf" download aria-label="Download PDF Resume" class="md:mt-0 md:w-1/2 h-auto border-2 rounded-lg w-1/2  mt-4 flex items-center justify-center text-white bg-blue-500 hover:bg-blue-700 text-center transition-transform duration-300 ease-in-out transform active:scale-95 active:shadow-inner">
-                        <NuxtImg src="/img/pdf.svg" class="w-8 h-8 m-4 text-white  " />
-                        <span class="text-base leading-relaxed md:text-xl m-4">PDF</span>
+                    <div class="lg:mt-4 flex justify-center md:justify-start">
+                    <a href="/intouch-code/docs/intouch_resume.pdf" download aria-label="Download PDF Resume" class="md:mt-0 lg:w-1/3 lg:h-12 md:w-1/3 md:h-10 h-12 border-2 rounded-full w-1/2  mt-4 flex items-center justify-center text-white bg-blue-500 hover:bg-blue-700 text-center transition-transform duration-300 ease-in-out transform active:scale-95 active:shadow-inner">
+                        <NuxtImg src="/img/pdf.svg" class="w-6 h-6 text-white  " />
+                        <span class="text-base leading-relaxed md:text-sm ml-2">PDF</span>
                     </a>
                 </div>
                 </div>
