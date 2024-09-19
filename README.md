@@ -1,75 +1,15 @@
-# Nuxt 3 Minimal Starter
+# Portfolio
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Portfolio Link: [page](https://codereadygo.com/intouch-code/)
 
-## Setup
+## Overview
 
-Make sure to install the dependencies:
+This portfolio is created to showcase my profile and provide insights into my skills, experiences, and the projects I've worked on. I'm passionate about developing innovative solutions and continuously improving my craft in the software development field.
 
-```bash
-# npm
-npm install
+## Technologies Used
 
-# pnpm
-pnpm install
+This portfolio is built using the following technologies:
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **Nuxt.js:** A powerful framework based on Vue.js for building server-side rendered applications.
+- **Tailwind CSS:** A utility-first CSS framework that allows for rapid UI development.
+- **DaisyUI:** A Tailwind CSS component library that provides pre-designed UI components to enhance the design process.
