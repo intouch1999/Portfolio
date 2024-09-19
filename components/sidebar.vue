@@ -1,6 +1,6 @@
 <template>
     <div v-show="isMdOrLarger" class="relative h-32 w-32 z-10">
-      <div class="fixed inset-y-0 right-0 w-16 z-10">
+      <div class="fixed inset-y-0 -right-5 w-16 z-10">
         <aside class="fixed z-10 items-center h-screen mr-10 hidden md:flex">
           <nav class="flex flex-1 flex-col gap-y-4 pt-10">
             <a v-for="section in sections" :key="section.id" :href="'#' + section.id"
