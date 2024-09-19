@@ -24,5 +24,4 @@ logs
 !.env.example
 
 # .gitignore
-composables/
 public/img/intouch.jpg
